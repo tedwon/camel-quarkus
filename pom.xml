@@ -136,7 +136,7 @@
         <kryo.version>2.24.0</kryo.version><!-- @sync org.apache.flink:flink-core:${flink-version} dep:com.esotericsoftware.kryo:kryo -->
         <mapstruct.version>${mapstruct-version}</mapstruct.version>
         <minio.version>8.2.2</minio.version><!-- @sync io.quarkiverse.minio:quarkus-minio-parent:${quarkiverse-minio.version} prop:minio.version -->
-        <msal4j.version>1.13.9</msal4j.version><!-- @sync com.azure:azure-identity:${azure-identity.version} dep:com.microsoft.azure:msal4j -->
+        <msal4j.version>1.15.1</msal4j.version><!-- @sync com.azure:azure-identity:${azure-identity.version} dep:com.microsoft.azure:msal4j -->
         <mvel2.version>2.5.0.Final</mvel2.version><!-- @sync org.apache.camel:camel-dependencies:${camel.version} prop:mvel-version -->
         <mybatis.version>3.5.13</mybatis.version><!-- @sync io.quarkiverse.mybatis:quarkus-parent:${quarkiverse-mybatis.version} prop:mybatis.version -->
         <oak-jackrabbit-api.version>1.48.0</oak-jackrabbit-api.version><!-- @sync org.apache.jackrabbit:jackrabbit-parent:${jackrabbit-version} prop:oak-jackrabbit-api.version.implemented -->
@@ -712,7 +712,7 @@
                 <executions>
                     <execution>
                         <id>default-test</id>
-                        <phase /><!-- unbound here to speedup -Dquickly build; bound to a phase in camel-quarkus-build-parent-it -->
+                        <phase/><!-- unbound here to speedup -Dquickly build; bound to a phase in camel-quarkus-build-parent-it -->
                     </execution>
                 </executions>
             </plugin>
@@ -723,7 +723,7 @@
                 <executions>
                     <execution>
                         <id>attach-descriptor</id>
-                        <phase /><!-- skip to save time -->
+                        <phase/><!-- skip to save time -->
                     </execution>
                 </executions>
             </plugin>
@@ -769,7 +769,7 @@
                                         <requireJavaVersion>
                                             <version>11</version>
                                         </requireJavaVersion>
-                                        <dependencyConvergence />
+                                        <dependencyConvergence/>
                                         <filteredExternalRules>
                                             <location>classpath:enforcer-rules/quarkus-require-maven-version.xml</location>
                                         </filteredExternalRules>
@@ -1035,7 +1035,7 @@
                         <executions>
                             <execution>
                                 <id>camel-quarkus-enforcer-rules</id>
-                                <phase /><!-- Speedup the check-format profile by skipping the enforcer  -->
+                                <phase/><!-- Speedup the check-format profile by skipping the enforcer  -->
                             </execution>
                         </executions>
                     </plugin>
@@ -1058,7 +1058,7 @@
                         <executions>
                             <execution>
                                 <id>source-release-assembly</id>
-                                <phase /><!-- fix https://github.com/apache/camel-quarkus/issues/844 -->
+                                <phase/><!-- fix https://github.com/apache/camel-quarkus/issues/844 -->
                             </execution>
                             <execution>
                                 <id>camel-quarkus-source-release-assembly</id>
